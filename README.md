@@ -20,7 +20,7 @@ This project focuses on transitioning a single, vulnerable EC2 instance into a p
 ### Phase 1: Network Security Isolation
 1. Provisioned `cloud-class-alb-sg` to receive external public traffic on Port 80.
 2. Built `cloud-class-ec2-sg` and configured its inbound rules to accept HTTP traffic **ONLY** from the ALB Security Group ID, establishing a secure chain.
-> `![Security Group Rules](1.jpeg
+(https://github.com/vee2020/aws-ha-selfhealing-web-app/tree/main)
 ### Phase 2: Compute Automation Template
 1. Generated an EC2 **Launch Template** choosing Amazon Linux 2023.
 2. Enforced secure IMDSv2 parameters by extending the **Metadata response hop limit** to `2`.
